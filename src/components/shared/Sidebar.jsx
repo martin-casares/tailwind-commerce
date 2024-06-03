@@ -9,9 +9,13 @@ import {
   RiLogoutBoxRLine,
 } from "react-icons/ri";
 
-const Sidebar = () => {
+const Sidebar = ({ showMenu }) => {
   return (
-    <div className="bg-[#1f1d2b] fixed left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl">
+    <div
+      className={`bg-[#1f1d2b] fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl z-50 transition-all
+            ${showMenu ? "left-0" : "-left-full"}
+           `}
+    >
       <div>
         <ul className="pl-4">
           <li>
