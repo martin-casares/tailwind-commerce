@@ -6,6 +6,7 @@ import {
   RiPieChart2Line,
   RiCloseLine,
   RiSearchLine,
+  RiArrowDownSLine,
 } from "react-icons/ri";
 import Sidebar from "./components/shared/Sidebar";
 
@@ -41,8 +42,8 @@ function App() {
           <div className="lg:col-span-6">
             {/* header  */}
             <header className="p-4">
-              {/* title */}
-              <div className="flex flex-col gap-4 mb-6">
+              {/* title and search */}
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
                 <div>
                   <h1 className="text-2xl text-gray-200">Resto</h1>
                   <p className="text-gray-500">02 de junio 2024</p>
@@ -59,15 +60,15 @@ function App() {
                 </form>
               </div>
               {/* tabs */}
-              <nav className="text-gray-100 flex items-center border-b">
+              <nav className="text-gray-100 flex items-center justify-between md:justify-start md:gap-8 border-b mb-6">
                 <a
                   href=""
-                  className="py-2 pr-4 border-b border-[#ec7c6a] text-[#ec7c6a]"
+                  className="relative py-2 pr-4 before:w-1/2 before:h-[2px] before:absolute  before:bg-[#ec7c6a] before:left-0 before:rounded-full before:-bottom-[2px] text-[#ec7c6a]"
                 >
                   Hot dishes
                 </a>
                 <a href="" className=" py-2 pr-4">
-                  Cold diches
+                  Cold dishes
                 </a>
                 <a href="" className=" py-2 pr-4">
                   Soup
@@ -76,6 +77,13 @@ function App() {
                   Gril
                 </a>
               </nav>
+              {/* Title content */}
+              <div className="flex justify-between items-center">
+                <h2 className="text-2xl text-gray-300">Choose Dishes</h2>
+                <button className="flex items-center text-gray-300 gap-2 bg-[#1f1d2b] py-2 px-4 rounded-lg">
+                  <RiArrowDownSLine /> Dine in
+                </button>
+              </div>
             </header>
           </div>
           <div className="lg:col-span-2 fixed lg:static right-0">carrito</div>
