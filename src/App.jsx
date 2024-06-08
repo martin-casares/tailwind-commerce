@@ -38,10 +38,10 @@ function App() {
           </button>
         </nav>
 
-        <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8">
-          <div className="lg:col-span-6">
+        <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
+          <div className="lg:col-span-6 md:p-8">
             {/* header  */}
-            <header className="p-4">
+            <header>
               {/* title and search */}
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
                 <div>
@@ -77,14 +77,62 @@ function App() {
                   Gril
                 </a>
               </nav>
-              {/* Title content */}
-              <div className="flex justify-between items-center">
-                <h2 className="text-2xl text-gray-300">Choose Dishes</h2>
-                <button className="flex items-center text-gray-300 gap-2 bg-[#1f1d2b] py-2 px-4 rounded-lg">
-                  <RiArrowDownSLine /> Dine in
-                </button>
-              </div>
             </header>
+            {/* Title content */}
+            <div className="flex justify-between items-center mb-12">
+              <h2 className="text-2xl text-gray-300">Choose Dishes</h2>
+              <button className="flex items-center text-gray-300 gap-2 bg-[#1f1d2b] py-2 px-4 rounded-lg">
+                <RiArrowDownSLine /> Dine in
+              </button>
+            </div>
+
+            {/* content */}
+            <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 ">
+              {/* card */}
+              <div className="bg-[#1f1d2b] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="plato1-2.png"
+                  alt=""
+                  className="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full"
+                />
+                <p className="text-xl">Lorem ipsum dolor sit.</p>
+                <span className="text-gray-400">$2.29</span>
+                <p className="text-gray-600">Lorem, ipsum dolor.</p>
+              </div>
+              {/* card */}
+              <div className="bg-[#1f1d2b] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="plato1-2.png"
+                  alt=""
+                  className="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full"
+                />
+                <p className="text-xl">Lorem ipsum dolor sit.</p>
+                <span className="text-gray-400">$2.29</span>
+                <p className="text-gray-600">Lorem, ipsum dolor.</p>
+              </div>
+              {/* card */}
+              <div className="bg-[#1f1d2b] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="plato1-2.png"
+                  alt=""
+                  className="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full"
+                />
+                <p className="text-xl">Lorem ipsum dolor sit.</p>
+                <span className="text-gray-400">$2.29</span>
+                <p className="text-gray-600">Lorem, ipsum dolor.</p>
+              </div>
+              {/* card */}
+              <div className="bg-[#1f1d2b] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img
+                  src="plato1-2.png"
+                  alt=""
+                  className="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full"
+                />
+                <p className="text-xl">Lorem ipsum dolor sit.</p>
+                <span className="text-gray-400">$2.29</span>
+                <p className="text-gray-600">Lorem, ipsum dolor.</p>
+              </div>
+            </div>
           </div>
           <div className="lg:col-span-2 fixed lg:static right-0">carrito</div>
         </main>
